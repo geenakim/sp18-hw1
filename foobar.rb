@@ -7,6 +7,7 @@ class Foobar
     a = a.map{|i| i.to_i + 2}
     a = a.select{|i| i % 2 == 0 && i < 10}
     a = a.select{|i| i < 10}
+    a = a.uniq
 
     sum = 0
     a = a.each{|i| sum += i}	
